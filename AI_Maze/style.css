@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#maze-container {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(10, 20px); /* Add this line */
+    grid-gap: 2px;
+    margin: 20px auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.wall {
+    background-color: #000; /* Black for walls */
+}
+
+.path {
+    background-color: #fff; /* White for paths */
+}
+
+.start {
+    background-color: green; /* Green for start */
+}
+
+.end {
+    background-color: red; /* Red for end */
+}
+
+.agent {
+    background-color: blue !important; /*Agent 007*/
+}
